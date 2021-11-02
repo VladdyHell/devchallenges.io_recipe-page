@@ -1,9 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+
 :root {
   overflow-x: hidden;
+  font-size: 10px;
 
   body {
     margin: 0;
-    padding: 0;
+    .content {
+      padding: 3.2rem 1.08rem;
+      font-family: 'Montserrat', sans-serif;
+
+      section {
+        // padding: 3.2rem 1.08rem;
+      }
+      h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+      }
+      #hero-section {
+        .hero-container {
+          h1, p {
+            margin: 0;
+          }
+          h1 {
+            font-size: 2.2rem;
+            // letter-spacing: -.1rem;
+            text-transform: capitalize;
+            margin-bottom: .8rem;
+          }
+          p {
+            position: relative;
+            font-size: 1.12rem;
+            font-style: italic;
+            // padding-left: 1.4rem;
+            display: flex;
+            justify-content: space-between;
+          }
+          p::before {
+            content: url('../images/6dots.svg');
+            position: relative;
+            margin-right: 1.2rem;
+          }
+        }
+      }
+      // .spoon, .knife {
+      //   filter: invert(81%) sepia(32%) saturate(3532%) hue-rotate(326deg) brightness(100%) contrast(91%);
+      // }
+    }
   }
 
 }

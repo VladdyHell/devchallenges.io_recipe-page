@@ -1,9 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap");
 :root {
   overflow-x: hidden;
+  font-size: 10px;
 }
 :root body {
   margin: 0;
-  padding: 0;
+}
+:root body .content {
+  padding: 3.2rem 1.08rem;
+  font-family: "Montserrat", sans-serif;
+}
+:root body .content h1, :root body .content h2, :root body .content h3 {
+  font-family: "Playfair Display", serif;
+}
+:root body .content #hero-section .hero-container h1, :root body .content #hero-section .hero-container p {
+  margin: 0;
+}
+:root body .content #hero-section .hero-container h1 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  margin-bottom: 0.8rem;
+}
+:root body .content #hero-section .hero-container p {
+  position: relative;
+  font-size: 1.12rem;
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+}
+:root body .content #hero-section .hero-container p::before {
+  content: url("../images/6dots.svg");
+  position: relative;
+  margin-right: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
